@@ -1,0 +1,22 @@
+<mat-card>
+  <div class="col-md-4" *ngFor="let ftrack of favoriteTracks">
+    <div class="card mb-2">
+      <img class="card-img-top" src="assets/images/music.webp" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">{{ftrack.id}}</h4>
+        <p class="card-text">{{ftrack.name}}</p>
+        <p class="card-text">{{ftrack.comment}}</p>
+        <a class="btn btn-primary" (click)="openDialog(ftrack.id,ftrack.name,ftrack.comment)">
+          <i class="material-icons">
+            edit
+            </i>
+        </a>
+        <a class="btn btn-secondary" (click)=deleteFavoriteTracks(ftrack.id)>
+          <i class="material-icons">
+            delete
+            </i>
+        </a>
+      </div>
+    </div>
+  </div>
+</mat-card>

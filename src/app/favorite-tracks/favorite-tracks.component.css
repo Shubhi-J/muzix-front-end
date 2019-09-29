@@ -1,0 +1,11 @@
+/* class to set the button alignment */
+.button {
+    margin-left: 30%;
+}
+/* class to set the mat-card */
+mat-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 622px;
+}

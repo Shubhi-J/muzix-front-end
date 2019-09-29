@@ -1,0 +1,21 @@
+<div>
+        <mat-toolbar color="primary">
+         <app-logo></app-logo>
+      
+          <span style="flex: 1 1 auto;"></span>
+          <!-- <mat-card> -->
+            <!-- <button  class="button" (click)=getAllTracks() mat-raised-button color="primary">All Tracks</button> -->
+            <button class="button" (click)=getFavoriteTracks() mat-raised-button color="accent">Favorite Tracks</button>
+        <!-- </mat-card> -->
+        <span style="flex: 1 1 auto;"></span>
+          <app-search-bar></app-search-bar>
+        </mat-toolbar>
+          <!-- <button mat-icon-button [mat-menu-trigger-for]="menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+        </mat-toolbar>
+        <mat-menu x-position="before" #menu="matMenu">
+          <button mat-menu-item>Option 1</button>
+          <button mat-menu-item>Option 2</button>
+        </mat-menu> -->
+        </div>
